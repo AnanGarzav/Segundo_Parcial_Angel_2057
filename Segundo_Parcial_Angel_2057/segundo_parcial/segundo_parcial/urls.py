@@ -21,4 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('recursos/', include('recursos.urls')),
+    path('admin/', admin.site.urls),
+    path('api/', include('recursos.urls')),  # Asegúrate de incluir la app de recursos
 ]
